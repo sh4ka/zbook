@@ -150,7 +150,12 @@ export default async function Home() {
           <div className="relative pt-10 bg-gradient-to-t from-[#96c4a5]  to-[#ffffff] dark:from-transparent dark:via-transparent dark:to-transparent background-animate text-center">
             <div className="relative z-10">
               <div className="px-6 py-16">
-                <div className="mx-auto max-w-[22rem] md:max-w-[40rem] font-inter text-[2rem] font-bold leading-tight md:text-6xl md:leading-[1.08] space-y-2 ">
+                <div
+                  className="mx-auto max-w-[22rem] md:max-w-[40rem] font-inter text-[2rem] font-bold leading-tight md:text-6xl md:leading-[1.08] space-y-2 overflow-x-auto
+                scrollbar scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-h-[6px]
+              scrollbar-thumb-slate-200 scrollbar-track-slate-100
+              dark:scrollbar-thumb-slate-500/50 dark:scrollbar-track-slate-500/[0.16] "
+                >
                   <h1>{t("MultiUserSection")}</h1>
                   <h1>{t("HomeSloganB")}</h1>
                 </div>
@@ -171,7 +176,7 @@ export default async function Home() {
         </MotionBounce>
       </section>
 
-      <section className=" py-20 sm:py-32 bg-gradient-to-t from-[#e3d5b1]  to-[#ffffff] dark:from-transparent dark:via-transparent dark:to-transparent">
+      <section className="py-20 sm:py-32 bg-gradient-to-t from-[#e3d5b1]  to-[#ffffff] dark:from-transparent dark:via-transparent dark:to-transparent">
         <MotionBounce direction="y">
           <div className="my-12 px-6 md:px-0 mx-auto max-w-5xl text-center">
             <div className="w-full text-center">
